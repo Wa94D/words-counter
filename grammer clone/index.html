@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grammery clone</title>
+    <link rel="stylesheet" href="/style.scss/style.css" />
+  </head>
+  <body>
+    <!-- HEADING CONTAINER -->
+
+    <div class="wrapper">
+      <h2>Real time charcters counter</h2>
+      <p>
+        check your english text for grammer , spelling and punctuation errors
+        with Real Time Character counter
+      </p>
+    </div>
+
+    <!-- TEXT BOX -->
+
+    <textarea
+      id="text"
+      name=""
+      placeholder="Enter your text here"
+      id=""
+      maxlength="250"
+    ></textarea>
+    <button onclick="copyText()">copy text</button>
+
+    <!--updated and remaining counter  -->
+    <div class="container-counter">
+      <p>Total character : <span id="total__counter"></span></p>
+      <p>Remaining character: <span id="remaining__counter"></span></p>
+    </div>
+    <script src="/counter.js"></script>
+  </body>
+</html>
